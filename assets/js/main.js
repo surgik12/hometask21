@@ -25,15 +25,12 @@
     for(let i = 0; i < winterDays.length -1; i++){
         if (winterDays[i] < 0){
             countFreeze++;
-            console.log (`тест счета ${countFreeze}`);
         } else if (winterDays[i] >= 0){
             countFreeze = 0;
-            console.log (`тест обнуления ${countFreeze}`);
         } 
 
         if(countFreeze > longFreeze){
             longFreeze = countFreeze;
-            console.log (`тест продолжительности ${countFreeze}`);
         }
     }
 
